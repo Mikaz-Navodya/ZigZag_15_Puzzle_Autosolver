@@ -1,4 +1,4 @@
-🎮 Java Tile-Matching Arcade Game
+🎮 Java - 15 Puzzle with AutoSolving Feature
 
 A classic logic-based puzzle solving game built with Java Swing
 
