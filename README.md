@@ -1,96 +1,73 @@
-🎮 Java - 15 Puzzle with AutoSolving Feature
+🧩 15-Puzzle Game — Java Swing Project
 
-A classic logic-based puzzle solving game built with Java Swing
+The 15-Puzzle Game is an interactive desktop application developed using Java and Swing, designed to recreate the classic sliding puzzle experience with modern UI elements and additional gameplay features. This project demonstrates strong skills in object-oriented programming, event-driven design, and graphical user interface development.
 
-📌 Overview
+📌 Project Overview
 
-This project is a Java-based arcade puzzle game that challenges players to think quickly, plan moves carefully, and score as many points as quick as possible before the board times up. 
-Developed using Java Swing, the game offers smooth animations, dynamic tile behavior, and customizable difficulty settings.
+The game presents players with a 4×4 grid containing 15 numbered tiles and one empty slot. The goal is to rearrange the tiles into correct numerical order by sliding them into the empty space. The project adds depth and engagement through timers, difficulty modes, animations, and sound effects.
 
-The goal is simple:
-👉 Match tiles, clear the board, and achieve the highest possible score!
+🎮 Core Gameplay Features
 
-🕹️ Game Features
-⭐ 1. Dynamic Tile Grid
+4×4 Dynamic Puzzle Board
+Automatically generated tile layout with image-based or color-based tiles.
 
-A tile-based board that updates in real-time.
+Tile Movement Logic
+Players can slide tiles into the empty slot from any adjacent direction (up, down, left, right). Valid moves update the board instantly.
 
-Tiles move based on player actions.
+Real-Time Timer & Move Counter
+Tracks performance as the player progresses, adding motivation and challenge.
 
-⭐ 2. Puzzle Logic
+Three Difficulty Levels
 
-Players must order tiles according to the game rules.
+Easy — fewer shuffles, generous move limit and time.
 
-⭐ 3. Multiple Difficulty Levels
+Medium — moderate challenge.
 
-Easy / Medium / Hard modes.
+Hard — highly shuffled layout with strict limits.
 
-Faster tile generation and stricter penalties at higher levels.
+Win & Lose Conditions
+The game automatically detects:
 
-⭐ 4. Score Tracking
+When the puzzle is correctly solved
 
-Real-time scoring system.
+When the player exceeds the time or move limit
 
-High score memory .
+Sound Effects
+Includes audio feedback for sliding tiles, buttons, wins, and losses to enhance the user experience.
 
-⭐ 5. Customizable Visuals
+🧠 Additional Functionality
 
-Smooth font rendering
+Auto-Solver Feature
+Two modes:
 
-Adjustable grid size and tile spacing
+Solve from the initial puzzle position
 
-⭐ 6. Randomization Engine
+Solve from the current game state
+Useful for demos, debugging, or helping new players understand the puzzle.
 
-Board generation uses Java’s Random class for unpredictable tile placement.
+CPU Puzzle Preview Panel
+Displays the original shuffled layout for comparison.
 
-Ensures each game run feels fresh.
+Leaderboard System
+Stores player name, moves, and completion time in an external file for long-term score tracking.
 
-⭐ 7. Event-Driven UI
+User-Friendly Interface
+Built with Swing components such as JFrame, JPanel, JLabel, JButton, and custom layouts to create a clean and intuitive UI.
 
-Mouse-based tile selection
+💡 What This Project Demonstrates
 
-Buttons for restart, and exit
+This project highlights key development abilities, including:
 
+Java OOP design
 
-Continue playing until the game-over conditions are met.
+GUI programming with Swing
 
-🛠️ Technologies Used
+State management and board logic
 
-Java 8+
+Recursive/algorithmic problem solving
 
-Java Swing (UI rendering)
+File handling (leaderboard storage)
 
-AWT (colors, fonts, graphics)
+Multithreading (timers and autosolve)
 
-Custom logic classes for tile management, scoring, and game state
-
-Random utilities for generating unpredictable board scenarios
-
-📂 Project Structure
-/src
- ├── BoardGUI.java
- ├── MainMenu.java
- ├── Player.java
- ├── Driver.java
-/Pics
-/Sounds
-/build
-
-▶️ How to Run
-Option 1: Compile & Run via Terminal
-javac *.java
-java Driver.java
-
-Option 2: Run in an IDE
-
-Open the project in IntelliJ, Eclipse, or NetBeans
-
-Set Driver.java as the entry point
-
-Click Run
-
-
-📄 License
-
-This project is open for learning and personal use.
-Please credit the original developer when reusing the code.
+UX-oriented design with sound and visual feedback
